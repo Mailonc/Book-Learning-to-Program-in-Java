@@ -1,8 +1,9 @@
 package inheritance;
 
-public class CommunityMember {
+    public class CommunityMember {
 
     private String Name;
+
 
      public CommunityMember(String Name){
          this.Name = Name;
