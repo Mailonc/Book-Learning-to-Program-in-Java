@@ -5,4 +5,8 @@ public class Teacher extends Faculty{
     public Teacher(String Name, double salary, String position) {
         super(Name, salary, position);
     }
+
+    public void positionTeacher(){
+        System.out.println("Teacher Position: " + getPosition());
+    }
 }
