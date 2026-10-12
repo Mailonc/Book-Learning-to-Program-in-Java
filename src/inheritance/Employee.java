@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Employee extends CommunityMember{
+public abstract class Employee extends CommunityMember implements Payable{
 
     private double salary;
     private String position;
@@ -10,6 +10,7 @@ public class Employee extends CommunityMember{
         this.salary = salary;
         this.position = position;
     }
+
     public String getPosition(){
         return position;
     }
@@ -17,11 +18,6 @@ public class Employee extends CommunityMember{
     public double getSalary(){
         return salary;
     }
-
-    public void showSalary(){
-        System.out.println("Name: " + getName() + "| salary: " + getSalary() + " R$" + " | Position:" + getPosition() );
-    }
-
     public double salaryBonuses(double bonuses){
         return salary =  salary + bonuses;
     }
@@ -29,4 +25,13 @@ public class Employee extends CommunityMember{
     public double salaryDeductions(double deductions){
         return salary =  salary - deductions;
     }
+
+    public abstract void showInformation();
+
+
+    public void showSalary(){
+        System.out.println("Name: " + getName() + "| salary: " + getSalary() + " R$" + " | Position:" + getPosition() );
+    }
+
+
 }
