@@ -1,13 +1,11 @@
 package inheritance;
 
-public class Faculty extends Employee implements Reportable {
+public class Faculty extends Employee implements Payable,Reportable{
 
 
     public Faculty(String Name, double salary, String position) {
         super(Name, salary, position);
     }
-
-
 
 
     public void report() {

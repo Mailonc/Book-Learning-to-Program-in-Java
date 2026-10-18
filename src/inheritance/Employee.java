@@ -1,6 +1,6 @@
 package inheritance;
 
-public abstract class Employee extends CommunityMember implements Payable{
+public abstract class Employee extends CommunityMember{
 
     private double salary;
     private String position;
@@ -10,7 +10,6 @@ public abstract class Employee extends CommunityMember implements Payable{
         this.salary = salary;
         this.position = position;
     }
-
     public String getPosition(){
         return position;
     }
@@ -18,6 +17,8 @@ public abstract class Employee extends CommunityMember implements Payable{
     public double getSalary(){
         return salary;
     }
+
+
     public double salaryBonuses(double bonuses){
         return salary =  salary + bonuses;
     }
@@ -34,4 +35,7 @@ public abstract class Employee extends CommunityMember implements Payable{
     }
 
 
+    public abstract double calculatePayment(); {
+
+    }
 }

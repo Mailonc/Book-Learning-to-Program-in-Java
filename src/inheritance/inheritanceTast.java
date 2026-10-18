@@ -6,7 +6,6 @@ import java.util.Locale;
 public class inheritanceTast {
 
     static void main() {
-
         Locale.setDefault(Locale.US);
         Employee[] pay = new Employee[3];
 
@@ -26,5 +25,7 @@ public class inheritanceTast {
         }
         System.out.printf("Total: %.2f%n", sun);
 
+        Employee staff = null;
+        System.out.println("salary adjustment: " + staff.salaryBonuses(500) + " Bonus");
     }
 }
